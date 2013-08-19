@@ -1,0 +1,10 @@
+<div class="container">
+  <h1><%=@twitter_user.username%></h1>
+  <% if @user_tweets %>
+    <ul>
+      <% @user_tweets.each do |tweet| %>
+        <li><%=tweet%></li>
+        <% end %>
+      <% end %>
+    </ul>
+</div>
